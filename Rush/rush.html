@@ -6,14 +6,25 @@
     <title>Tailwind Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss-slider@1.0.0/dist/tailwind-slider.min.css" rel="stylesheet" />
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-black backdrop-blur-lg transition-colors duration-300 md:px-10 lg:px-10">
+<body class="bg-black backdrop-blur-lg  md:px-10 lg:px-10 scroll-smooth">
     <header>
             <div>
                     <div class="flex justify-center">
-                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-purple-400 transition text-white">Infos</div>      
-                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-purple-400 transition text-white">Certificates</div>
-                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-purple-400 transition text-white">Contact</div>
+                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-blue-600 transition text-white ">
+                            <a href="#head1">Infos</a>
+                        </div>      
+                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-blue-600 transition text-white">
+                            <a href="#head2">Certificates</a>
+                        </div>
+                        <div class="text-lg m-6 group relative w-max cursor-pointer hover:text-blue-600 transition text-white">
+                            <a href="#head3">Contact</a>
+                        </div>
                     </div>
             </div>
     </header>
@@ -23,7 +34,7 @@
         PORTFOLIO
     </div>
 </head1>
-<div class="grid grid-cols-2 grid-rows-1 gap-12 mt-60">
+<head2 id="head1"class="grid grid-cols-2 grid-rows-1 gap-12 mt-60">
     <div class="text-white">
         <div class="grid grid-cols-1 grid-rows-3 gap-12 mt-60">
             <div class="2xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-semibold font-serif mt-2">Neme:Lebron James</div>
@@ -37,9 +48,9 @@
         <div class="absolute md:-left-[45%] sm:-left-[42%] -left-[40%] opacity-10 w-[50%] h-full my-auto bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-3xl"></div>
     
     </div>
-</div>
-<body2 class="text-center">
-    <div class="text-white text-8xl font-semibold mt-60 ">
+</head2>
+<body2 id="head2"class="text-center">
+    <div class="text-white text-8xl font-semibold mt-60 py-30">
         CERTIFICATES
     </div>
 </body2>
@@ -84,7 +95,7 @@
     </div>
 </body3>
 
-<div class="grid grid-cols-10 gap-3 mt-60 py-60">
+<body4 id="head3" class="grid grid-cols-10 gap-3 mt-60 py-60">
     <div class=" col-span-7"><div class="object-center">
         <img src="https://images8.alphacoders.com/782/thumb-1920-782694.jpg">
     </div></div>
@@ -106,4 +117,4 @@
         </div>
     </div>
   </div>
-</div>
+</body4>
